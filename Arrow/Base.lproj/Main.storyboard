@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Arrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejr-67-6bn">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yEY-Wv-tAY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right.png" translatesAutoresizingMaskIntoConstraints="NO" id="gy7-PJ-ZoX">
+                                <rect key="frame" x="67" y="294" width="240" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3OC-Wa-noL"/>
+                                    <constraint firstAttribute="height" constant="80" id="7dO-lv-pTK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ejr-67-6bn" secondAttribute="bottom" id="3hf-wF-GhZ"/>
+                            <constraint firstItem="ejr-67-6bn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6Kd-O6-Jgb"/>
+                            <constraint firstItem="ejr-67-6bn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hv6-c4-fDl"/>
+                            <constraint firstItem="gy7-PJ-ZoX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n9V-X5-pgD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ejr-67-6bn" secondAttribute="trailing" id="rmv-uO-OJk"/>
+                            <constraint firstItem="gy7-PJ-ZoX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvi-Sm-zcB"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="arrowImage" destination="gy7-PJ-ZoX" id="lND-4j-5Ku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="379.5" y="308.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="right.png" width="708" height="189"/>
+    </resources>
+</document>
